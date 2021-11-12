@@ -1,0 +1,20 @@
+server:
+ port: 9091
+ 
+logging:
+ level:
+  root: INFO   
+ 
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/javafsd
+    username: admin
+    password: admin
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+  application:
+   name: DEPARTMENT-SERVICE
+  zipkin:
+   base-url: http://localhost:9411/
